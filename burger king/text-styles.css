@@ -1,0 +1,47 @@
+/**
+ * CS 132
+ * HW2: Burger Fever (CSS layout and Client-side JS)
+ * CSS specific to text styling (example of CSS decomposition)
+ */
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
+}
+
+#menu-view h1 {
+  font-size: 48pt;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  /* Some fancy CSS color properties */
+  color: var(--watermelon);
+  background-image: linear-gradient(135deg, #FF9921, #FF4646);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#hud p, button {
+  font-size: 20pt;
+  width: 200px;
+  font-weight: bold;
+}
+
+h2, select {
+  font-size: 16pt;
+}
+
+#hud p {
+  text-align: center;
+}
+
+.option button {
+  color: var(--watermelon);
+}
+
+.option button:hover, .option .selected {
+  color: var(--orange-yellow);
+}
+
+.ingredient-card strong {
+  margin: auto;
+}

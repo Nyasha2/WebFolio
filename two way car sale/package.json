@@ -1,0 +1,20 @@
+{
+  "name": "final-project-proposal",
+  "version": "1.0.0",
+  "main": "carsale.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Nyasha2"
+  },
+  "author": "Nyasha Makaya",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

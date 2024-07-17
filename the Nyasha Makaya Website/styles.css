@@ -1,0 +1,100 @@
+/*
+   Name: Nyasha Makaya
+   CS 132 Spring 2024
+   Date: April 1st, 2024
+   This is the styles.css page for my personal website. 
+   It is used by all pages in my personal website for styling purposes
+*/
+
+/*importing the google font */
+
+@import url(
+  'https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Yanone+Kaffeesatz:wght@200..700&display=swap'
+);
+
+/*Style for the pannel bar */
+
+/* Reset default margin and padding */
+body, ul {
+   margin: 0;
+   padding: 0;
+}
+
+/* Style for the list items */
+.panel-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the panel bar */
+.panel-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.panel-bar ul li:last-child {
+  margin-right: 0;
+}
+
+.panel-bar ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.panel-bar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.panel-bar ul li a:hover {
+  background-color: #555;
+}
+
+/* Style for the rest of the docs */
+
+.welcome-text{
+  font-size: 54pt;
+  color: #333;
+}
+
+h2 {
+  font-size: 18pt;
+}
+
+.welcome-page{
+  background-image: "images/wireframe.jpeg";
+}
+
+body {
+  background-color: lightgray;
+  color:#333;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16pt;
+} 
+
+img {
+  padding: 10px;
+  width: "20";
+  height: "30";
+}
+
+footer {
+  font-family: 'Courier New', Courier, monospace;
+  vertical-align: bottom;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+ul > p {
+  margin: 20;
+  padding:20;
+}
+
+

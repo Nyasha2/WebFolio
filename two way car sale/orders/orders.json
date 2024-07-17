@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Nyasha",
+    "email": "nmakaya@caltech.edu",
+    "address": "1200 E California",
+    "credit_card_number": "79780",
+    "zip_code": "7698"
+  },
+  {
+    "name": "Nyasha",
+    "email": "b@gmail.com",
+    "address": "1200 E California",
+    "credit_card_number": "2345",
+    "zip_code": "234",
+    "order": "Audi A4"
+  },
+  {
+    "name": "Nyasha",
+    "email": "nmakaya@caltech.edu",
+    "address": "1200 E California",
+    "credit_card_number": "1576",
+    "zip_code": "45678",
+    "order": "Acura RL"
+  },
+  {
+    "name": "Nyasha",
+    "email": "nmakaya@caltech.edu",
+    "address": "110602338493",
+    "credit_card_number": "3456",
+    "zip_code": "89",
+    "order": "Cadillac Eldorado"
+  },
+  {
+    "name": "Nyasha",
+    "email": "b@gmail.com",
+    "address": "1200 E California",
+    "credit_card_number": "4567",
+    "zip_code": "345678",
+    "order": "Buick LeSabre"
+  },
+  {
+    "name": "Nyasha",
+    "email": "nmakaya@caltech.edu",
+    "address": "1200 E California",
+    "credit_card_number": "234",
+    "zip_code": "23456",
+    "order": "BMW 528i"
+  },
+  {
+    "name": "Nyasha",
+    "email": "nmakaya@caltech.edu",
+    "address": "1200 E California",
+    "credit_card_number": "234",
+    "zip_code": "23456",
+    "order": "BMW 528i,Total ,BMW 528i,Cadillac Eldorado"
+  },
+  {
+    "name": "Nyasha",
+    "email": "nmakaya@caltech.edu",
+    "address": "1200 E California",
+    "credit_card_number": "3456",
+    "zip_code": "3456",
+    "order": "Acura Integra"
+  },
+  {
+    "name": "Redeemed",
+    "email": "b@gmail.com",
+    "address": "1200 E California",
+    "credit_card_number": "132",
+    "zip_code": "43534",
+    "order": "BMW 328i"
+  },
+  {
+    "name": "karim",
+    "email": "a@gmail.com",
+    "address": "1200 E California",
+    "credit_card_number": "131",
+    "zip_code": "23534",
+    "order": "BMW 328i"
+  },
+  {
+    "name": "Nyasha",
+    "email": "nmakaya@caltech.edu",
+    "address": "1200 E California",
+    "credit_card_number": "12345",
+    "zip_code": "4567",
+    "order": "Acura Integra,Audi A8,Cadillac Escalade,Chevrolet Camaro,Honda CR-V"
+  },
+  {
+    "name": "Abdulkarim",
+    "email": "amugisha200@gmail.com",
+    "address": "1200 E California",
+    "credit_card_number": "123456789",
+    "zip_code": "12345",
+    "order": "BMW 328i,Cadillac DeVille,Buick LeSabre,Cadillac Catera"
+  }
+]

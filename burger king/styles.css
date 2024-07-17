@@ -1,0 +1,132 @@
+/**
+ * CS 132
+ * HW2: Burger Fever (CSS layout and Client-side JS)
+ * CSS for the Game View styles
+ */
+
+/* Note: You will see some examples of CSS variables which you're not required
+ * to know, but we've kept to show how they can be useful. Ask Will/Andrew/El
+ * if you're curious! */
+
+/* CSS variables for color palette */
+:root {
+  --orange-yellow: #FFF7E4;
+  --watermelon: #FF4B44;
+}
+
+body {
+  background-color: var(--orange-yellow);
+}
+
+body, h2, p {
+  margin: 0;
+}
+
+/* Flex containers (more will be added in game-view.css) */
+#menu, #menu > div, .option {
+  display: flex;
+}
+
+/* Flex columns */
+#menu, .option {
+  flex-direction: column;
+}
+
+/* Due to CSS specificity, need to specify ID + .hidden class to hide
+   each of the two views when given the .hidden class (otherwise display: flex
+   takes precedence) */
+.hidden, #game-view.hidden, #menu-view.hidden {
+  display: none;
+}
+
+/* Simple container for the header and #menu */
+#menu-view {
+  height: 90vh;
+  padding: 5vh 0;
+  /* We chose a background img here to help with design; in general,
+     use the img HTML tag instead of background-img if the image has semantic
+     meaning on the page that we want screenreaders/etc. to find
+     (it doesn't here) */
+  background-image: url('imgs/burgers.png');
+  background-size: 50vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom left;
+}
+
+#menu {
+  align-items: center;
+  /* We chose to make margin relative to screen width size */
+  margin: 5% 20%;
+  padding: 50px;
+  /* This is a flex property that gives spacing between the children;
+     as a flex column, adds some spacing between the options and button */
+  gap: 50px;
+  height: fit-content;
+  /* White, with a bit of opacity */
+  background-color: rgba(255, 255, 255, 0.7);
+  /* Example of a CSS property we chose to keep to show students */
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+}
+
+/* Styles for the menu options */
+#menu > div {
+  width: 100%;
+  /* Wraps the two options on smaller screen widths */
+  flex-wrap: wrap;
+  /* Specifies a gap between the two option divs */
+  gap: 40px;
+}
+
+/* Styles for the two option divs in the #menu interface */
+.option {
+  /* Centers the two options */
+  margin: 0 auto;
+  /* Specifies a small gap for buttons */
+  gap: 20px;
+  width: 30%;
+  min-width: 200px;
+}
+
+/* Shared UI element styles (buttons and dropdown) */
+select, button {
+  height: 50px;
+}
+
+/* Dropdown styles; notorious for being finicky. */
+select {
+  max-width: 100%;
+  width: 400px;
+  padding-left: 10px;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+  /* A bit of nice UX to indicate interactivity. */
+  cursor: pointer;
+}
+
+/* Page-wide button styles */
+button {
+  max-width: 100%;
+  /* Nifty. */
+  background-image: linear-gradient(90deg, #FF8833, #F4CA35);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Specific #menu button styles */
+.option button {
+  background-image: none;
+  background-color: transparent;
+  border: 3px solid var(--watermelon);
+}
+
+/* Add some nice UX indicators */
+.option button:hover, .option .selected {
+  background-color: var(--watermelon);
+}
+
+.option .selected {
+  border: 3px solid #c03732;
+}

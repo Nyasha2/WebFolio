@@ -1,0 +1,148 @@
+/*
+ * Author: Nyasha Makaya
+ * CS 132 Spring 2024 Final Project
+ * Date: 10 June 2024
+ *
+ * This is the css file containing the styles for the two way
+ * car shop website. It includes styles on background color,
+ * image alignment and text styles.
+ */
+
+header div, .img-container, #shop-view, #cart-view, #cart-view > div > div,
+form, #btn-div, main, nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: beige;
+}
+
+body {
+    font-family: 'Ubuntu', Verdana, sans-serif;
+}
+
+label {
+    padding: 15px;
+}
+
+form, button {
+    margin: 20px;
+}
+
+button {
+    max-width: 150px;
+    max-height:130px;
+    min-height: 50px;
+}
+
+form {
+    background-color: gray;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: lightgray;
+    color: black;
+}
+
+select {
+    align-self: center;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px lightgray solid;
+}
+
+nav ul {
+    margin: 0px;
+    padding-left: 15px;
+    color: lightgray;
+}
+
+.icon {
+    width:50px;
+    height:50px;
+    margin: 20px;
+}
+
+.success {
+    background-color: lightgreen;
+}
+
+.img-container {
+    border-radius: 5px;
+    background-color: rgb(233, 231, 231);
+    font-weight: bold;
+}
+
+.img-container, #cart-view, form, main {
+    flex-direction: column;
+}
+
+h1, #main-view {
+    text-align: center;
+    align-items: center;
+}
+
+#shop-view.hidden, #single-view.hidden, #cart-view.hidden,
+#faqs.hidden, #message-view.hidden, #check-out.hidden,
+.hidden, main > .hidden, #filter-view.hidden {
+    display: none;
+}
+
+#shop-view {
+    flex-wrap: wrap;
+}
+
+#cart-view > div > div {
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+#cart-view h2 {
+    align-self: center;
+}
+
+#shop-view.img-container {
+    max-width: 300px;
+    max-height: 200px;
+    padding:50px;
+    margin: 50px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+#shop-view img, #cart-view img {
+    max-width: 250px;
+    max-height:155px;
+}
+
+#main-view img {
+    width: 1000px;
+}
+
+#product-view img {
+    width:250px;
+}
+
+#img-container {
+    width:150px;
+    height:150px;
+}
+
+
+
+
+
+
+

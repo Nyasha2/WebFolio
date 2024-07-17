@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+    Author: Nyasha Makaya
+    CS 132 Spring 2024
+    Date: 22 May 2024
+
+    This page contains the html of the landing page of my two way 
+    car sale website.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="utils.js"></script>
+    <script defer src="about.js"></script>
+    <title>two way car sale</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="imgs/home.png" alt="home icon" class="icon">
+            </a>
+            <h1>The Two Way Car Shop</h1>
+            <img id="cart-img" src="imgs/black-cart.png" alt="cart icon" class="icon">
+        </div>
+    </header>
+    <main>
+        <section id="message-view">
+            <h2>Got any concern? Please submit a complaint using the form below: </h2>
+            <form id="input-form">
+                <label>
+                    Name:
+                    <input id="name-input" name="name" type="text" autocomplete="name" required/>
+                </label>
+                <label>
+                    Email:
+                    <input id="email-input" name="email" type="email" autocomplete="email" required/>
+                </label>
+                <label>
+                    Message:
+                    <input id="message-input" name="message" type="text" autocomplete="message" required/>
+                </label>
+                <button id="submit-btn" type="submit">Submit Message</button>
+            </form>
+            <button id="faq-btn">Frequently Asked Questions</button>
+        </section>
+        <section id="faqs"></section>
+    </main>
+</body>
+</html>

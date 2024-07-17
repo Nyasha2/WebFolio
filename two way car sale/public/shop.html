@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+    Author: Nyasha Makaya
+    CS 132 Spring 2024
+    Date: 22 May 2024
+
+    This page contains the html of the landing page of my two way 
+    car sale website shoping page.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700">
+    <script src="utils.js"></script>
+    <script defer src="carsale.js"></script>
+    <title>two way car sale</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="imgs/home.png" alt="home icon" class="icon">
+            </a>
+            <h1>The Two Way Car Shop</h1>
+            <img id="cart-img" src="imgs/black-cart.png" alt="cart icon" class="icon">
+        </div>
+        
+    </header>
+    <main>
+        <section id="center-view">
+            <section id="shop-view">
+                <div>
+                    <select id="select"></select>
+                    <button id="search">Search</button>
+                </div> 
+            </section>
+
+            <section id="filter-view" class="hidden">
+                <button >Back To Main Shop</button>
+                <div></div>
+            </section>
+            <section id="single-view" class="hidden"></section>
+
+            <section id="cart-view" class="hidden">
+                <h2> My Cart</h2>
+                <div id="btn-div">
+                    <button id="back-to-shop">Back To Shop</button>
+                    <button id="place-order">Check Out</button>
+                </div>
+                <div id="carted"></div>
+            </section>
+
+            <section id="check-out" class="hidden">
+                <button id="back-to-cart">Back To Cart</button>
+                <h3>Order</h3>
+                <div id="order"></div>
+                <form id="checkout-form">
+                    <label>
+                        Name:
+                        <input id="name-input" name="name" type="text" autocomplete="name" required/>
+                    </label>
+                    <label>
+                        Email:
+                        <input id="email-input" name="email" type="email" autocomplete="email" required/>
+                    </label>
+                    <label>
+                        Address:
+                        <input id="message-input" name="address" type="text" autocomplete="address" required/>
+                    </label>
+                    <label>
+                        Credit Card Number:
+                        <input id="credit-card-input" name="credit" type="number" autocomplete="credit" required/>
+                    </label>
+                    <label>
+                        Zip Code:
+                        <input id="zip-input" name="zip" type="number" autocomplete="zip" required/>
+                    </label>
+                    <button id="submit-btn" type="submit">Place Order</button>
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,114 @@
+/**
+ * CS 132
+ * HW2: Burger Fever (CSS layout and Client-side JS)
+ * CSS for the Game View styles
+ * Instructions: Follow requirements in HW 2 spec to finish this
+ * file (leaving styles.css and text-styles.css unchanged).
+ * We have started you off with #game-view, but you will finish the rest
+ * (you may factor out shared styles from #game-view, such as
+ * flex layout which we've started off for you (make sure you don't have
+ * 3 duplicate #game-view { } selectors in your final submission though)
+ */
+
+/* Flex containers (more to add) */
+#game-view, #hud, #station, #order-ui, #assembly, #ingredient-list, .ingredient-card {
+  display: flex;
+}
+
+/* Flex columns (more to add) */
+#game-view, #order-ui, .ingredient-card {
+  flex-direction: column;
+}
+
+/* hud-specific styles */
+#hud {
+  justify-content: space-between;
+  height: 10vh;
+  align-items: center;
+}
+
+/* Game-view specific styles */
+#game-view {
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 20px;
+}
+
+#ingredient-list, .ingredient-card {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/*station specific styles */
+#station {
+  height: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/*order specific styles */
+#order {
+  background-color: #FFFCF7;
+  height: 100%;
+  width: 200px;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: lightgrey;
+}
+
+/* #assembly specific style */
+#assembly {
+  flex-direction: column-reverse;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+/* style for each image in #assembly */
+#assembly img {
+  max-width: 20%;
+}
+
+/* style for the #ingredients list */
+#ingredient-list {
+  flex-wrap: wrap;
+  background-color: #EBDFC2;
+  width: auto;
+  height: auto;
+  gap: 10px;
+}
+
+/* .ingredient-card specific styles */
+.ingredient-card {
+  min-width: 200px;
+  width: 23%;
+  background-color: white;
+  align-items: center;
+  font-size: 16pt;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+.ingredient-card img {
+  width: 120px;
+  align-self: center;
+}
+
+.img-container {
+  height: 50px;
+
+}
+
+.ingredient-card:hover, #order.correct-order{
+  background-color: #BEFFC5;
+}
+
+.ingredient-card:active{
+  transform: translate(0px, 2px);
+}

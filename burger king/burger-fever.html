@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  CS 132
+  HW 2: Burger-Fever (CSS Layout and Client-Side JS)
+
+  HTML for the Burger Fever UI with two views (menu and game)
+  Note to curious students: You'll see a mix of divs and sections;
+  game UIs can vary with choice of HTML5 tags, and this is the version we
+  finalized to balance semantics vs. divs for layout purposes.
+-->
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Burger Fever</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="text-styles.css" />
+  <link rel="stylesheet" href="game-view.css" />
+
+  <!-- Provided helper files for DOM aliases and menu options -->
+  <script src="utils.js"></script>
+  <!-- Will be relevant to Part B -->
+  <!-- <script defer src="menu-helper.js"></script> -->
+  <!-- HW 2 student code to-be-implemented -->
+  <script defer src="burger-fever.js"></script>
+</head>
+
+<body>
+  <main>
+    <!-- Main menu view (game setup) -->
+    <section id="menu-view">
+      <!-- Header is for for menu view only -->
+      <header>
+        <h1>Burger Fever</h1>
+      </header>
+      <section id="menu">
+        <div>
+          <div class="option">
+            <h2>Difficulty Level</h2>
+            <button value="easy" class="selected">Easy</button>
+            <button value="hard">Hard</button>
+          </div>
+          <div class="option">
+            <h2>Select Timer</h2>
+            <select>
+              <option value="5">5 Seconds</option>
+              <option value="180" selected>3 Minutes</option>
+              <option value="300">5 Minutes</option>
+            </select>
+          </div>
+        </div>
+        <button id="start-btn">Start</button>
+      </section>
+    </section>
+
+    <!-- Game view (toggled when starting/ending a game) -->
+    <section id="game-view" class="hidden">
+      <section id="hud">
+        <button id="back-btn">Menu</button>
+        <p>Score: <span id="score">0</span></p>
+        <p>Timer: <span id="timer">3:00</span></p>
+      </section>
+      <!-- The "burger-building" station -->
+      <section id="station">
+        <section id="order-ui">
+          <h2>Order</h2>
+          <!-- Contains the current order information -->
+          <div id="order"></div>
+        </section>
+        <!-- Where the burger is built when a player clicks on ingredient
+                 cards -->
+        <div id="assembly"></div>
+      </section>
+      <!-- Will be populated with ingredients for the chosen difficulty -->
+      <section id="ingredient-list"></section>
+    </section>
+  </main>
+</body>
+</html>

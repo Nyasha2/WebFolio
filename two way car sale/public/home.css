@@ -1,0 +1,13 @@
+/*
+ * Author: Nyasha Makaya
+ * CS 132 Spring 2024 Final Project
+ * Date: 10 June 2024
+ *
+ * This is the css file containing the styles for the
+ * home page of the Two Way Car Sale website.
+ */
+
+body {
+    background-color: black;
+    color: lightgray;
+}
